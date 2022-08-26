@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import classes from './Card.module.css';
+import Context from "../../context/state/Context";
 
 
 function Card(props) {
-     
+    const { addItemsCos } = useContext(Context)
+    function itemP(ky) {
+        let countnr = new Object()
+        countnr[ky] = 1
+        return countnr
+    }
 
     return (<div className={classes.card}>
         
@@ -31,7 +37,7 @@ function Card(props) {
         </div>
             }
             <div className={classes.btn}>
-            {props.stoc !== 0 ? <button >Adauga in cos</button> :
+            {props.stoc !== 0 ? <button onClick={() => addItemsCos(props.id, itemP("item"+props.id))}>Adauga in cos</button> :
                 <p ><span>Out of stoc</span></p>}          
             </div>   
     </div>)
