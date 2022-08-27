@@ -19,7 +19,27 @@ const Reducer = (state, action) => {
                 ...state,
                 countProd: action.payload
             }
-            }     
+        }  
+        case REMOVE_ITEM: {
+            return {
+              ...state,
+              itemsId: state.itemsId.filter(
+                (item) => item !== action.payload
+              ),
+            };
+        }
+        case COUNT_COS: {
+            return {
+                ...state,
+                countProd: [...state.countProd,action.payload]
+            }
+        }
+        case TOTAL_PRET: {
+            return {
+                ...state,
+                totalPret: action.payload
+            }
+        }
           default:
             return state;
     }
