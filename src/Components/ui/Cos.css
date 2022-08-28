@@ -1,3 +1,6 @@
+body{
+    background-color: aliceblue;
+}
 .divcos{
     display: flex;
     flex-direction: column;
@@ -5,6 +8,7 @@
     height: 120px;
     box-shadow: 0 0 2px black;
     margin: 5px auto;
+    background-color: white;
 }
 .produs_cos{
     display: flex;

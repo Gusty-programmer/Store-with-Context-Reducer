@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Context from '../context/state/Context';
 import Cos from '../Components/ui/Cos';
 
-function FavoritesPage() {
+function CosCumparaturi() {
     const {itemsId, totalPret} = useContext(Context)
     return (
         <section>
@@ -40,4 +40,4 @@ function FavoritesPage() {
     )
 }
 
-export default FavoritesPage;
+export default CosCumparaturi;

@@ -40,6 +40,12 @@ const Reducer = (state, action) => {
                 totalPret: action.payload
             }
         }
+        case MENU: {
+            return {
+                ...state,
+                filtruMenu: action.payload
+            }
+            }
           default:
             return state;
     }

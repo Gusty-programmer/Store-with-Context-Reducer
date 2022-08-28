@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { COUNT_COS, ADD_ITEMS_COS,  ADD_COUNT, REMOVE_ITEM, TOTAL_PRET} from "../Types";
+import { COUNT_COS, ADD_ITEMS_COS,  ADD_COUNT, REMOVE_ITEM, TOTAL_PRET, MENU} from "../Types";
 import Reducer from "./Reducer";
 import Context from "./Context";
 
@@ -9,6 +9,8 @@ const State = ({ children }) => {
     const initialState = {
         countProd:[],
         itemsId: [],
+        totalPret: 0,
+        filtruMenu: "Toate",
         
     }
 
@@ -59,6 +61,9 @@ const [state, dispatch] = useReducer(Reducer, initialState)
     const total = (tot) => {
         dispatch({type: TOTAL_PRET, payload: tot})
     };
+    const changeMenu = (filtru) => {     
+        dispatch({type: MENU, payload: filtru})
+    }
 
     
 return (

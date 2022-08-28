@@ -7,7 +7,9 @@
     cursor: pointer;
     border-radius: 1px;
     letter-spacing: 2px;
+    background-color: white;
 }
+
 .li:hover {
     background-color: #777;
     color: #eee;

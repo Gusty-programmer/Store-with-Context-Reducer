@@ -2,8 +2,6 @@ import React, {useContext, useEffect } from "react";
 import PROD_DATA from "../../Img/List";
 import "./Cos.css"
 import Context from "../../context/state/Context";
-// import itemP from '../sesions/Details'
-
 
 export default function Cos(props) {
 

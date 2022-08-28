@@ -1,14 +1,49 @@
-<h1 align="center">Hi, I'm Augustin</h1>
-<h3 align="center">A passionate frontend developer from Romania</h3>
 
-- 🔭 I’m currently working on [Store-virtual with Context](https://github.com/Gusty-programmer)
+# Virtual Store using React ContextAPI + useReducer
 
-- 🌱 I’m currently learning **Reactjs**
+I built this project to deepen my knowledge of React using React-hooks
+This project is currently in development. This is an online model kits store. Users can filter their search by categories (cars, planes, tanks, ships). Both the price and the promotional price are displayed. They can add products to the shopping cart or view the product in detail where the desired quantity can be changed.
+In the shopping cart,
+you can change the quantity, see the total price or remove products from the cart.
+The products can be bought within the limit of the available stock.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
+## Screenshots
 
+![App Screenshot](https://github.com/Gusty-programmer/Store-with-Context-Reducer/blob/master/src/Img/printscreen/prscr1.png)
+![App Screenshot](https://github.com/Gusty-programmer/Store-with-Context-Reducer/blob/master/src/Img/printscreen/prscr2.png)
+![App Screenshot](https://github.com/Gusty-programmer/Store-with-Context-Reducer/blob/master/src/Img/printscreen/prscr3.png)
+
+## Tech Stack
+
+- HTML
+- CSS
+- JAVASCRIPT
+  - Framework - REACT
+    - React Hooks :
+        - useContext
+        - useReducer
+
+
+
+
+
+
+## Authors
+
+- [Augustin](https://github.com/Gusty-programmer)
+
+
+## Installation
+
+In the project directory, you can run:
+
+```bash
+  npm install 
+  npm start
+```
+    
+
+## License
+
+This project is licensed under the [Augustin] License - see the LICENSE file for details

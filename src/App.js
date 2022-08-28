@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import MainNav from "./Components/layout/MainNav";
-import AllProductsPage from "./Pages/AllProducts";
+import Produse from "./Pages/Produse";
 import CosCumparaturi from "./Pages/CosCumparaturi";
-import NewProductsPage from "./Pages/Oferte";
+import Oferte from "./Pages/Oferte";
+import Details from './Components/sesions/Details';
 
 
 
@@ -14,9 +15,10 @@ function App() {
     <div>
       <MainNav  />
       <Routes>
-      <Route path="/" exact element={<AllProductsPage />} />
+      <Route path="/" exact element={<Produse />} />
       <Route path="/Cos" element={<CosCumparaturi />} />
-        <Route path="/Oferte" element={<NewProductsPage />} />
+        <Route path="/Oferte" element={<Oferte />} />
+        <Route path="/:ID" element={<Details />} />
       </Routes>
       </div>
      

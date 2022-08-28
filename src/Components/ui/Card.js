@@ -1,18 +1,23 @@
 import React, {useContext} from 'react';
 import classes from './Card.module.css';
+import { Link } from 'react-router-dom';
 import Context from "../../context/state/Context";
 
 
 function Card(props) {
+
     const { addItemsCos } = useContext(Context)
+
     function itemP(ky) {
         let countnr = new Object()
         countnr[ky] = 1
         return countnr
     }
 
+    
+
     return (<div className={classes.card}>
-        
+        <Link to={`/${props.id}`}>
         <div className={classes.image}>
             <img src={props.image} alt={props.name} />
             {props.promo > 0 &&
@@ -21,7 +26,7 @@ function Card(props) {
             </div>
         <div>
             <h3>{props.name}</h3>
-            </div>
+            </div></Link>
             <div>
                 <p>{props.scara}</p>
             </div>

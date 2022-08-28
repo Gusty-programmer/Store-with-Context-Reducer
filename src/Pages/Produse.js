@@ -5,7 +5,7 @@ import PROD_DATA from "../Img/List";
 
 var prodi = PROD_DATA;
 
-function AllProductsPage() {
+function Produse() {
     return (     
         <section>
             <h1>AllProducts</h1>
@@ -15,4 +15,4 @@ function AllProductsPage() {
     );
 }
 
-export default AllProductsPage;
+export default Produse;

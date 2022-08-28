@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import classes from './ProdList.module.css';
 import ProdItems from './ProdItems';
 import Menu from '../ui/Menu';
+import Context from '../../context/state/Context';
 
 
 
 function ProdList(props) {
     
-
+    const {filtruMenu} = useContext(Context)
     const category = ["Toate"];
-    
+    let filtruCateg = props.products 
+    let categFilter = filtruMenu
+    if (categFilter === "Toate") {
+        filtruCateg = props.products
+    } else {
+        filtruCateg = props.products.filter((fil) => fil.categ === categFilter)
+    }
    
     props.products.map((cat) => {
       if (!category.includes(cat.categ)) {
@@ -34,7 +41,7 @@ function ProdList(props) {
             </div>          
             <div className={classes.cards}>
                <ul className={classes.list}>
-                {props.products.map((prod) => (
+                {filtruCateg.map((prod) => (
                 <ProdItems
                     key={prod.id}
                     id={prod.id}
@@ -44,7 +51,7 @@ function ProdList(props) {
                     pret={prod.pret}
                     description={prod.description}
                     promo={prod.oferta}
-                        stoc={prod.stoc}
+                    stoc={prod.stoc}
                      
                 />
             ))}
