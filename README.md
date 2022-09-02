@@ -9,10 +9,11 @@ The products can be bought within the limit of the available stock.
 
 
 ## Screenshots
-
+<p>
 <img src = "https://github.com/Gusty-programmer/Store-with-Context-Reducer/blob/master/src/Img/printscreen/prscr1.png"  alt ="screenshot" width = "200"/>
 <img src = "https://github.com/Gusty-programmer/Store-with-Context-Reducer/blob/master/src/Img/printscreen/prscr2.png"  alt ="screenshot" width = "200"/>
 <img src = "https://github.com/Gusty-programmer/Store-with-Context-Reducer/blob/master/src/Img/printscreen/prscr3.png"  alt ="screenshot" width = "200"/>
+</p>
 
 ## Tech Stack
 
